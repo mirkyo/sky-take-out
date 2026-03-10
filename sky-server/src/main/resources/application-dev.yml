@@ -1,0 +1,13 @@
+sky:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    host: localhost
+    port: 3306
+    database: sky_take_out
+    username: root
+    password: 123456
+redis:
+  host: ${sky.redis.host} # 默认一般是 localhost 或 127.0.0.1
+  port: ${sky.redis.port} # 默认 6379
+  password: ${sky.redis.password} # 如果你刚刚按我说的免安装启动，这里一般留空或者按模板默认即可
+  database: ${sky.redis.database}
