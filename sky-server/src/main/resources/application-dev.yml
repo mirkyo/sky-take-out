@@ -6,6 +6,13 @@ sky:
     database: sky_take_out
     username: root
     password: 123456
+
+  minio:
+    endpoint: http://118.196.25.208:9000
+    accessKey: minioadmin
+    secretKey: minioadmin
+    bucketName: images
+
 redis:
   host: ${sky.redis.host} # 默认一般是 localhost 或 127.0.0.1
   port: ${sky.redis.port} # 默认 6379
