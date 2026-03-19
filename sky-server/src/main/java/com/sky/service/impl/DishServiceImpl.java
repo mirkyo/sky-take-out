@@ -133,4 +133,13 @@ public class DishServiceImpl implements DishService {
         }
 
     }
+
+    /**
+     * 条件查询菜品和口味
+     * @param dish
+     * @return
+     */
+    public List<Dish> list(Dish dish) {
+        return dishMapper.list(dish);
+    }
 }
