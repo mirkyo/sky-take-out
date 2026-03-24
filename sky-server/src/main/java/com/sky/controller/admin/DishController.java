@@ -80,6 +80,7 @@ public class DishController {
     }
 
     @GetMapping("/list")
+    @ApiOperation("根据套餐分类查询菜品")
     public Result<List<Dish>> list(Long categoryId){
         Dish dish = new Dish();
         dish.setCategoryId(categoryId);
